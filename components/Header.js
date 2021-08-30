@@ -1,5 +1,7 @@
 import Link from "next/link";
-import styles from "../styles/Header.module.css";
+import Search from "./Search";
+
+import styles from "@/styles/Header.module.css";
 
 export default function Header() {
   return (
@@ -9,7 +11,7 @@ export default function Header() {
           <a>KombinasEvents</a>
         </Link>
       </div>
-
+      <Search />
       <nav>
         <ul>
           <li>
