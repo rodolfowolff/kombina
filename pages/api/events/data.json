@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Thursdays with Dj Manny",
+      "slug": "dj-many",
+      "venue": "Horizon Club",
+      "address": "913 3rd Ave New York, New York (NY), 100022",
+      "performers": "Dj Manny",
+      "date": "June 09, 2021",
+      "time": "10:00 PM EST",
+      "description": "Best music from the 90's and 2000's",
+      "image": "/images/sample/event1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Thursdays with Dj Thiago",
+      "slug": "dj-thiago",
+      "venue": "Horizon Club",
+      "address": "913 3rd Ave New York, New York (NY), 100022",
+      "performers": "Dj Thiago",
+      "date": "June 09, 2021",
+      "time": "10:00 PM EST",
+      "description": "Best music from the 90's and 2000's",
+      "image": "/images/sample/event2.jpg"
+    }
+  ]
+}
