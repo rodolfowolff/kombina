@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -8,6 +7,8 @@ import { API_URL } from "@/config/index";
 import Layout from "@/components/Layout";
 
 import "react-toastify/dist/ReactToastify.css";
+
+import { ToastContainer, toast } from "react-toastify";
 import styles from "@/styles/Form.module.css";
 
 export default function AddEventPage() {
