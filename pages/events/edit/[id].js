@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 import { API_URL } from "@/config/index";
 import Layout from "@/components/Layout";
+import Modal from "@/components/Modal";
 
 import moment from "moment";
 import { ToastContainer, toast } from "react-toastify";
@@ -25,7 +26,10 @@ export default function EditEventPage({ evt }) {
     description: evt.description,
   });
 
-  const [imagePreview, setImagePreview] = useState(evt.image ? evt.image.formats.thumbnail.url : null);
+  const [imagePreview, setImagePreview] = useState(
+    evt.image ? evt.image.formats.thumbnail.url : null);
+
+  const [showModal, setShowModal] = useState(false);
 
   const router = useRouter();
 
@@ -145,17 +149,26 @@ export default function EditEventPage({ evt }) {
 
       <h2>Event image</h2>
       { imagePreview ? (
-        <Image src={ imagePreview } height={ 100 } width={ 170 } />
+        <Image
+          src={ imagePreview }
+          height={ 100 }
+          width={ 170 }
+          alt={ values.name }
+        />
       )
         : <div>
           <p>No image uploaded</p>
         </div> }
 
       <div>
-        <button className="btn-secondary">
+        <button onClick={ () => setShowModal(true) } className="btn-secondary">
           <FaImage /> Set image
         </button>
       </div>
+
+      <Modal show={ showModal } onClose={ () => setShowModal(false) }>
+        IMAGE UPLOAD
+      </Modal>
 
     </Layout>
   );
