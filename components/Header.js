@@ -26,7 +26,7 @@ export default function Header() {
             </Link>
           </li>
 
-          { !user ?
+          { user ?
             <>
               <li>
                 <Link href="/events/add">
