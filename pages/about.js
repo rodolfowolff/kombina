@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <Layout title="About events">
       <h1>About</h1>
-      <p>Events, music...</p>
+      <p>Events, music and more.</p>
     </Layout>
   );
 }
