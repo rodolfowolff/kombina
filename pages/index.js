@@ -11,11 +11,11 @@ export default function HomePage({ events }) {
 
       { events.length === 0 && <h3>No events to show</h3> }
 
-      { events.map((evt) => (
+      { events.length > 0 && events.map((evt) => (
         <EventItem key={ evt.id } evt={ evt } />
       )) }
 
-      { events.length > 0 && (
+      { events.length > 4 && (
         <Link href='/events'>
           <a className='btn-secondary'>View all events</a>
         </Link>

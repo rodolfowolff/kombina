@@ -12,10 +12,9 @@ export default function SearchPage({ events }) {
 
   return (
     <Layout title='Search Results'>
+      <Link href='/events'>Go Back</Link>
 
-      <Link href='/events'>Go back</Link>
-
-      <h1>Search results for: { router.query.term }</h1>
+      <h1>Search Results for { router.query.term }</h1>
 
       { events.length === 0 && <h3>No events to show</h3> }
 
@@ -34,9 +33,9 @@ export async function getServerSideProps({ query: { term } }) {
         { name_contains: term },
         { performers_contains: term },
         { description_contains: term },
-        { venue_contains: term }
-      ]
-    }
+        { venue_contains: term },
+      ],
+    },
   });
 
   const res = await fetch(`${API_URL}/events?${query}`);
