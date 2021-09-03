@@ -18,6 +18,8 @@ export default function RegisterPage() {
 
   const { register, error } = useContext(AuthContext);
 
+  useEffect(() => error && toast.error(error));
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -81,7 +83,7 @@ export default function RegisterPage() {
 
             <p>Already have an account?
               <Link href='/account/login'>
-                Login
+                Register
               </Link>
             </p>
           </form>
