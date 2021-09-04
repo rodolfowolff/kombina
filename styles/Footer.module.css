@@ -5,8 +5,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 70px;
+  background-color: #ececec;
 }
 
 .footer p {
-  margin: 5px 0;
+  margin-top: 4px;
 }

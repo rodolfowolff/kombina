@@ -9,10 +9,10 @@ export default function EventItem({ evt }) {
         <Image
           src={ evt.image ?
             evt.image.formats.thumbnail.url
-            : '/images/event-default.png' }
+            : '/images/shared-image.svg' }
           alt={ evt.name ? evt.name : 'Event image' }
-          width='245px'
-          height='135px'
+          width="245px"
+          height="135px"
         />
       </div>
 
