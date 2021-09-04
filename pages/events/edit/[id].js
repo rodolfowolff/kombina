@@ -166,8 +166,8 @@ export default function EditEventPage({ evt, token }) {
       { imagePreview ? (
         <Image
           src={ imagePreview }
-          height={ 100 }
-          width={ 170 }
+          height={ 135 }
+          width={ 245 }
           alt={ values.name }
         />
       )
