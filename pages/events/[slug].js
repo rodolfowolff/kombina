@@ -23,7 +23,10 @@ export default function EventPage({ evt }) {
         { evt.image && (
           <div className={ styles.image }>
             <Image
-              src={ evt.image.formats.medium.url }
+              src={ evt.image ?
+                evt.image.formats.medium.url
+                : '/images/shared-image.svg' }
+              alt={ evt.name ? evt.name : 'Event image' }
               width={ 960 }
               height={ 600 }
             />
