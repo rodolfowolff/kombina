@@ -1,5 +1,11 @@
 .container {
   margin: 60px auto 90px;
   max-width: 960px;
-  padding: 0 30px;
+  min-height: 70vh;
+}
+
+@media (max-width: 1060px) {
+  .container {
+    padding: 0px 20px;
+  }
 }
