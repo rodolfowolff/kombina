@@ -21,24 +21,17 @@ Demo live at: [kombina-nine.vercel.app](https://kombina-nine.vercel.app/)
 - Pagination
 - Search
 - Image uploading with Cloudinary
+- Categories using Markdown.
 
 ## Details
 
 <details>
-<summary>Build a static blog</summary>
+<summary>Static blog with:</summary>
 <br>
-<br>
+
 ```sh
 Frontend -- NextJS
 Backend -- Strapi CMS
 ```
 
-<details>
-<summary>Blog with:</summary>
-<br>
-Pagination,
-<br>
-Search 
-<br>
-Categories using Markdown.
 </details>
