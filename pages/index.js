@@ -17,7 +17,7 @@ export default function HomePage({ events }) {
 
       { events.length > 4 && (
         <Link href='/events'>
-          <a className='btn-secondary'>View all events</a>
+          <a className='btn-secondary'>View all...</a>
         </Link>
       ) }
     </Layout>
